@@ -1,54 +1,22 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+paySteriod
+paySteriod is a web application designed to streamline and enhance payment processing for businesses and individuals. Built with modern web technologies, it offers a user-friendly interface and robust functionality to manage transactions efficiently.
 
-Currently, two official plugins are available:
+Features
+Seamless Payment Integration: Easily integrate various payment gateways to handle transactions securely.​
+User Management: Manage user accounts with roles and permissions to ensure secure access control.​
+Transaction History: View and export detailed transaction logs for accounting and analysis purposes.​
+Responsive Design: Optimized for both desktop and mobile devices to provide a consistent user experience.​
+Technologies Used
+Frontend:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React: A JavaScript library for building user interfaces.​
+TypeScript: A statically typed superset of JavaScript.​
+Vite: A build tool that provides a fast development server and optimized build process.​
+Backend:
 
-## Expanding the ESLint configuration
+Node.js: A JavaScript runtime built on Chrome's V8 engine.​
+Express: A minimal and flexible Node.js web application framework.​
+Database:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+MongoDB: A NoSQL database for storing user and transaction data.
