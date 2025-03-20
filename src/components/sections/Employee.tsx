@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import todoList from "../../assets/icons/todoList.png";
 import user from "../../assets/icons/user.png";
 import profile from "../../assets/icons/profile.png";
 import search from "../../assets/icons/no-file.png";
 import { Calendar, CircleAlert } from "lucide-react";
-import NoResult from "./noResult";
+import NoResult from "./NoResult";
 import '@mantine/charts/styles.css';
 import { LineChart } from '@mantine/charts';
 

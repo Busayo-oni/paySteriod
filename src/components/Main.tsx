@@ -1,4 +1,3 @@
-import React from 'react'
 import Todo from './sections/TodoList'
 import Employee from './sections/Employee'
 import Employment from './sections/Employment'

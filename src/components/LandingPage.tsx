@@ -1,4 +1,3 @@
-import React from "react";
 import { AppShell, Burger } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Navbar from "./Navbar"; // Ensure correct import path

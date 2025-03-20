@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import todoList from "../../assets/icons/todoList.png";
 import bullet from "../../assets/icons/bullet.png";
 import search from "../../assets/icons/no-search.png";
 import { Progress } from "@mantine/core";
 import { ArrowUpRight, ChevronRight, CircleCheck } from "lucide-react";
-import NoResult from "./noResult";
+import NoResult from "./NoResult";
 
 const Todo = () => {
   const [showMore, setShowMore] = useState(false);

@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import todoList from "../../assets/icons/todoList.png";
-import NoResult from './noResult';
+import NoResult from './NoResult';
 import search from "../../assets/icons/no-file.png";
 import { BarChart } from '@mantine/charts'
 

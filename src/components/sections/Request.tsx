@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import NoResult from './noResult'
+import { useState } from 'react'
+import NoResult from './NoResult'
 import search from "../../assets/icons/no-search.png";
 import RequestProps from './RequestProps';
 

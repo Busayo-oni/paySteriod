@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { AppShell } from '@mantine/core';
 import '@mantine/core/styles.css';
 import Logo from '../assets/PaySteriodLogo.png'
@@ -15,11 +15,13 @@ interface Navbar {
 
 const Navbar = () => {
 
-  const [openDropdown, setOpenDropdown] = useState(null);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-  const toggleDropdown = (menu) => {
-    setOpenDropdown(openDropdown === menu ? null : menu);
+
+  const toggleDropdown = (menu: string) => {
+    setOpenDropdown((prev) => (prev === menu ? null : menu));
   };
+  
   const menuItemClasses = 
     "flex flex-row items-center gap-3 cursor-pointer hover:bg-[#E16635] p-1 rounded-md transition-all duration-300 focus:bg-[#E16635] focus:outline-none";
     

@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import user from "../../assets/icons/user.png";
 import todoList from "../../assets/icons/todoList.png";
 import info from "../../assets/icons/info.png";
 import { PieChart } from '@mantine/charts'
-import NoResult from './noResult';
+import NoResult from './NoResult';
 import search from "../../assets/icons/no-file.png";
 import { BarChart } from '@mantine/charts'
 
