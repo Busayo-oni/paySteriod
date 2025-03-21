@@ -11,8 +11,8 @@ export default function App() {
     <MantineProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/wallet" element={<WalletManagement />} />
+          <Route index element={<LandingPage />} />
+          <Route path="wallet" element={<WalletManagement />} />
         </Routes>
       </Router>
     </MantineProvider>
