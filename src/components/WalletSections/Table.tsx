@@ -101,63 +101,59 @@ const data = [
 ]
 
 const Table = () => {
-  return (
-   
-<table className="w-full border-collapse">
-  <thead>
-    <tr className="bg-gray-50 text-[#667085] text-xs font-medium ">
-      <th className="p-3 text-left ">Payroll Name</th>
-      <th className="p-3 text-left ">Initiated by</th>
-      <th className="p-3 text-left ">Initiated by</th>
-      <th className="p-3 text-left ">Total Payroll Value</th>
-      <th className="p-3 text-left ">Status</th>
-      <th className="p-3 text-left text-gray-100 ">Header 6</th>
-    </tr>
-  </thead>
-  <tbody>
-    {data.map((item, index) => (
-      <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-        <td className="p-3 ">
-        <div className="flex flex-col">
-            <span className="text-[#101828] text-sm font-medium ">{item.col1}</span>
-            <span className="text-[#667085] text-sm font-normal ">{item.ident}</span>
-        </div>
-            </td>
-
-        <td className="p-3 ">
-        <div className="flex flex-col">
-            <span className="text-[#101828] text-sm font-medium ">{item.col2}</span>
-            <span className="text-[#667085] text-sm font-normal ">{item.date}</span>
-        </div>
-        </td>
-
-        <td className="p-3 ">
-        <div className="flex flex-col">
-            <span className="text-[#101828] text-sm font-medium ">{item.col3}</span>
-            <span className="text-[#667085] text-sm font-normal ">{item.date || (item.date2)}</span>
-        </div>
-        </td>
-
-        <td className="text-[#101828] text-sm font-medium p-3">{item.col4}
-        </td>
-
-        <td className="text-[#101828] text-sm font-medium p-3">
-    <StatusPill status={item.status || 'Completed'} />
-  
-</td>
-        <td className="p-3 ">
-          <div className="flex items-center gap-2">
-            <img 
-              src={viewmore} 
-              alt="expand" />
-            
-          </div>
-        </td>
+  return (   
+<div className="overflow-x-auto"> 
+  <table className="w-full border-collapse min-w-[800px]">
+    <thead>
+      <tr className="bg-gray-50 text-[#667085] text-xs font-medium">
+        <th className="p-3 text-left whitespace-nowrap">Payroll Name</th>
+        <th className="p-3 text-left whitespace-nowrap">Initiated by</th>
+        <th className="p-3 text-left whitespace-nowrap">Initiated by</th>
+        <th className="p-3 text-left whitespace-nowrap">Total Payroll Value</th>
+        <th className="p-3 text-left whitespace-nowrap">Status</th>
+        <th className="p-3 text-left text-gray-50 whitespace-nowrap">Header 6</th>
       </tr>
-    ))}
-  </tbody>
-</table>
-  )
+    </thead>
+    <tbody>
+      {data.map((item, index) => (
+        <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+          <td className="p-3">
+            <div className="flex flex-col">
+              <span className="text-[#101828] text-sm font-medium whitespace-nowrap">{item.col1}</span>
+              <span className="text-[#667085] text-sm font-normal whitespace-nowrap">{item.ident}</span>
+            </div>
+          </td>
+
+          <td className="p-3">
+            <div className="flex flex-col">
+              <span className="text-[#101828] text-sm font-medium whitespace-nowrap">{item.col2}</span>
+              <span className="text-[#667085] text-sm font-normal whitespace-nowrap">{item.date}</span>
+            </div>
+          </td>
+
+          <td className="p-3">
+            <div className="flex flex-col">
+              <span className="text-[#101828] text-sm font-medium whitespace-nowrap">{item.col3}</span>
+              <span className="text-[#667085] text-sm font-normal whitespace-nowrap">{item.date || (item.date2)}</span>
+            </div>
+          </td>
+
+          <td className="text-[#101828] text-sm font-medium p-3 whitespace-nowrap">{item.col4}</td>
+
+          <td className="text-[#101828] text-sm font-medium p-3 whitespace-nowrap">
+            <StatusPill status={item.status || 'Completed'} />
+          </td>
+
+          <td className="p-3">
+            <div className="flex items-center gap-2">
+              <img src={viewmore} alt="expand" />
+            </div>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>  )
 }
 
 export default Table

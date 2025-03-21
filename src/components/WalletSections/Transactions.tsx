@@ -34,21 +34,21 @@ const Transactions = () => {
             <div className='lg:border-r-[1px] lg:border-r-[#EAECF0] lg:w-[70%] w-full border-b-[1px] border-b-[#EAECF0] lg:border-b-[0px] '>
                 <p className="text-[#908C9C] text-base font-normal ">Total Payroll Expense</p>
                 
-          <h2 className="text-[#3E1C96] text-[32px] font-bold ">₦ 61,894,004.22</h2>
+          <h2 className="text-[#3E1C96] text-2xl lg:text-[32px] font-bold ">₦ 61,894,004.22</h2>
           <p className="text-[#908C9C] text-base font-normal "><span className="text-[#1F9F7D] text-base font-normal ">+ 9.3% </span>increase vs last Year </p>
             </div>
 
             <div className='lg:border-r-[1px] lg:border-r-[#EAECF0] border-b-[1px] border-b-[#EAECF0] lg:border-b-[0px]  lg:w-[70%] w-full'>
                 <p className="text-[#908C9C] text-base font-normal ">Highest Payroll Month</p>
                 
-          <h2 className="text-[#3E1C96] text-[32px] font-bold ">₦ 5,003,904</h2>
+          <h2 className="text-[#3E1C96] text-2xl lg:text-[32px] font-bold ">₦ 5,003,904</h2>
           <p className="text-[#908C9C] text-base font-normal ">April, 2024 </p>
             </div>
 
             <div className='lg:w-[80%] w-full '>
                 <p className="text-[#908C9C] text-base font-normal "> Highest Payrolled Department</p>
                 
-          <h2 className="text-[#3E1C96] text-[32px] font-bold ">₦ 15,904,222</h2>
+          <h2 className="text-[#3E1C96] text-2xl lg:text-[32px] font-bold ">₦ 15,904,222</h2>
           <p className="text-[#908C9C] text-base font-normal ">Sales Department. + 38% increase vs Other </p>
             </div>
 

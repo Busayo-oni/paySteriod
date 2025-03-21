@@ -25,7 +25,7 @@ const Payment = () => {
           <div className='flex items-center justify-between'>
               <div className="flex items-center gap-2">
                 <img src={todoList} alt="icon" />
-                <h3 className="font-medium text-gray-900 text-lg">SBSC WALLET</h3>
+                <h3 className="font-medium text-gray-900 text-base lg:text-lg">SBSC WALLET</h3>
               </div>
           <button className="flex items-center gap-1 text-gray-700 text-sm font-medium rounded-full border border-gray-300 shadow-sm px-3 py-1 cursor-pointer hover:bg-gray-100 transition duration-300">
                     Add Money
@@ -34,7 +34,7 @@ const Payment = () => {
                   </button> 
                   </div>
                   <div className="flex items-center gap-2 py-5  border-b border-b-gray-300 ">
-                    <h2 className="text-[#3E1C96] font-black text-[48px] ">₦ 32,904,904.33</h2>
+                    <h2 className="text-[#3E1C96] font-black lg:text-[48px] text-2xl ">₦ 32,904,904.33</h2>
                     <img src={eyes} alt="icon" />
                   </div>
 
@@ -69,7 +69,7 @@ const Payment = () => {
         </div>
 
         {/* Right Card: Department Distribution */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border w-[70%] border-gray-300">
+        <div className="bg-white p-6 rounded-2xl shadow-sm border lg:w-[70%] w-full border-gray-300">
         <div className="flex items-center gap-2">
                 <img src={todoList} alt="icon" />
                 <h3 className="font-medium text-gray-900 text-lg">Payment Method</h3>
