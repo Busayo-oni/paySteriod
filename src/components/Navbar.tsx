@@ -41,7 +41,7 @@ const Navbar = () => {
 
         <ul className="flex flex-col ml-5 font-Inter text-[14px] w-[90%] text-white">
       <li className={menuItemClasses} tabIndex={0}>
-        <img src={lock} alt="lock icon" /> <Link to="/">Dashboard</Link>
+        <img src={lock} alt="lock icon" /> <Link to="/home">Dashboard{" "}</Link>
       </li>
 
       <li 
@@ -85,7 +85,7 @@ const Navbar = () => {
       )}
 
       <li className={menuItemClasses} tabIndex={0}>
-        <img src={lock} alt="lock icon" /> <Link to="/wallet">Wallet Management</Link>
+        <img src={lock} alt="lock icon" /> <Link to="/wallet">Wallet Management{" "}</Link>
       </li>
 
       <li 

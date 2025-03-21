@@ -12,6 +12,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route index element={<LandingPage />} />
+          <Route path="home" element={<LandingPage />} />
           <Route path="wallet" element={<WalletManagement />} />
         </Routes>
       </Router>
