@@ -4,6 +4,7 @@ import '@mantine/core/styles.css';
 import Logo from '../assets/PaySteriodLogo.png'
 import lock from '../assets/icons/lock.png'
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router'
 
 
 
@@ -40,7 +41,7 @@ const Navbar = () => {
 
         <ul className="flex flex-col ml-5 font-Inter text-[14px] w-[90%] text-white">
       <li className={menuItemClasses} tabIndex={0}>
-        <img src={lock} alt="lock icon" /> Dashboard
+        <img src={lock} alt="lock icon" /> <Link to="/">Dashboard</Link>
       </li>
 
       <li 
@@ -84,7 +85,7 @@ const Navbar = () => {
       )}
 
       <li className={menuItemClasses} tabIndex={0}>
-        <img src={lock} alt="lock icon" /> Wallet Management
+        <img src={lock} alt="lock icon" /> <Link to="/wallet">Wallet Management</Link>
       </li>
 
       <li 
