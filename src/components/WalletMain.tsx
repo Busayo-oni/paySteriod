@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Payment from '../components/WalletSections/Payment'
 import Transactions from './WalletSections/Transactions'
 
