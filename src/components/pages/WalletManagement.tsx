@@ -1,11 +1,11 @@
 import { AppShell, Burger } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import Navbar from "../Navbar"; // Ensure correct import path
 import Jsb from "../../assets/icons/jsb.png";
 import message from "../../assets/icons/message.png";
 import notification from "../../assets/icons/notification.png";
 import member from "../../assets/icons/member.png";
 import WalletMain from "../WalletMain";
+import Navbar from "../Navbar";
 
 const WalletManagement = () => {
     const [opener, { toggle }] = useDisclosure();
