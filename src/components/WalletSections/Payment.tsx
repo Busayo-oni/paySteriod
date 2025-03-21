@@ -19,9 +19,9 @@ const Payment = () => {
   return (
     <section>
       
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6 mt-4">
+      <div className="flex lg:flex-row flex-col w-full gap-6 mt-4">
         {/* Left Card: Overview */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-300">
+        <div className="bg-white p-6 rounded-2xl shadow-sm border w-full border-gray-300">
           <div className='flex items-center justify-between'>
               <div className="flex items-center gap-2">
                 <img src={todoList} alt="icon" />
@@ -69,7 +69,7 @@ const Payment = () => {
         </div>
 
         {/* Right Card: Department Distribution */}
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-300">
+        <div className="bg-white p-6 rounded-2xl shadow-sm border w-[70%] border-gray-300">
         <div className="flex items-center gap-2">
                 <img src={todoList} alt="icon" />
                 <h3 className="font-medium text-gray-900 text-lg">Payment Method</h3>
